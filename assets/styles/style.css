@@ -1,0 +1,66 @@
+body {
+}
+/* ----------Navbar---------- */
+.navbar-nav {
+    align-items: flex-end;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.bg-light {
+    background-color: hsl(0, 0%, 4%) !important;
+}
+.navbar-light,
+.navbar-nav,
+.nav-link {
+    color: rgb(233, 233, 233) !important;
+}
+/* ----------Landing Page---------- */
+#landingPage {
+    background-image: url('../images/Entire_View.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91vh;
+    width: auto;
+    position: relative;
+}
+#landingPageLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, 33vh);
+}
+@media (min-width: 300px) {
+    #landingPageLogo {
+        width: 80%;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #landingPageLogo {
+        width: 60%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #landingPageLogo {
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #landingPageLogo {
+        width: 40%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #landingPageLogo {
+        width: 35vw;
+    }
+}
