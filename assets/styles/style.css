@@ -50,8 +50,9 @@ body {
 }
 /* ----------About Us ---------- */
 #aboutBackground {
-    background-image: url('../images/Boards.jpg');
+    background-image: url('../images/Boards_3.jpg');
     height: 100%;
+    min-height: 80vh;
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,41 +92,46 @@ body {
         transition: .4s;
     }
     /* ---------- About Us ---------- */
-#aboutHeader {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.aboutImageContainer {
-    overflow: hidden;
-}
-.aboutImages {
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    width: auto;
-    transition: 0.4s;
-}
-.aboutImages:hover {
-    transform: scale(1.1);
-    transition: 0.4s;
-}
-#aboutBackground > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.aboutImageContainer {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#firstAboutImage {
-    background-image: url('../images/Entire_View.jpg');
-}
-#secondAboutImage {
-    background-image: url('../images/Service_With_A_Smile.jpg');
-    display: none;
-}
-#thirdAboutImage {
-    background-image: url('../images/Kenny_And_Mr_T.jpg');
-}
-.aboutText {
-    padding: 5%;
-}
+    #aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
+        padding-top: 0;
+    }
+    #aboutHeader {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .aboutImageContainer {
+        overflow: hidden;
+    }
+    .aboutImages {
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: auto;
+        transition: 0.4s;
+    }
+    .aboutImages:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    #aboutBackground > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.aboutImageContainer {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #firstAboutImage {
+        background-image: url('../images/Entire_View.jpg');
+    }
+    #secondAboutImage {
+        background-image: url('../images/Service_With_A_Smile.jpg');
+        display: none;
+    }
+    #thirdAboutImage {
+        background-image: url('../images/Kenny_And_Mr_T.jpg');
+    }
+    .aboutText {
+        padding: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -147,7 +153,10 @@ body {
         width: 50%;
     }
     #thirdAboutImage {
-        margin:5%;
+        margin: 3%;
+    }
+    #firstAboutImage {
+        margin: 3%;
     }
 }
 
@@ -160,6 +169,12 @@ body {
         display: block;
     }
     #thirdAboutImage {
+        margin: 0;
+    }
+    #aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
+        padding-top: 3%;
+    }
+    #firstAboutImage {
         margin: 0;
     }
 }
