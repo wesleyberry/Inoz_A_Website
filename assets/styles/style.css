@@ -22,7 +22,14 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
-
+ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+}
+h2 {
+    text-align: center;
+}
 /* ----------Navbar---------- */
 .bg-light {
     background-color: hsl(0, 0%, 4%) !important;
@@ -58,6 +65,34 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color:rgb(233, 233, 233);
+}
+/* ----------Kitchen---------- */
+#kitchenBackground {
+    background-color: rgb(248, 248, 248);
+}
+#firstKitchenImage {
+    background-image: url('../images/Wrap.jpg');
+}
+#secondKitchenImage {
+    background-image: url('../images/Nachos.jpg');
+}
+.sidesAndDressings {
+    text-align: center;
+}
+.QBS {
+    background-color: rgb(233, 233, 233);
+}
+li {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+#navbarNav > ul > li{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 @media (min-width: 300px) {
     #landingPageLogo {
@@ -95,9 +130,9 @@ body {
     #aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
         padding-top: 0;
     }
-    #aboutHeader {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .headers {
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .aboutImageContainer {
         overflow: hidden;
@@ -110,8 +145,8 @@ body {
         transition: 0.4s;
     }
     .aboutImages:hover {
-        transform: scale(1.1);
-        transition: 0.4s;
+        transform: scale(1.1) !important;
+        transition: 0.4s !important;
     }
     #aboutBackground > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.aboutImageContainer {
         margin-top: auto;
@@ -131,6 +166,11 @@ body {
         padding: 3%;
         margin-top: auto;
         margin-bottom: auto;
+    }
+    /* ----------Kitchen---------- */
+    #firstKitchenImage,
+    #secondKitchenImage {
+        display: none;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -177,6 +217,16 @@ body {
     #firstAboutImage {
         margin: 0;
     }
+    /* ----------Kitchen---------- */
+    #firstKitchenImage,
+    #secondKitchenImage {
+        display: block;
+    }
+    /* #kitchenBackground > div:nth-child(3) > div:nth-child(1),
+    #kitchenBackground > div:nth-child(3) > div:nth-child(4) {
+        padding-left: 0;
+        padding-right: 0;
+    } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
