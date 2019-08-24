@@ -1,6 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Lexend Deca', sans-serif;
+    background-color: rgb(233, 233, 233);
+    color: hsl(0, 0%, 4%) !important;
 }
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.col-xl-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-6,
+.col-xl-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* ----------Navbar---------- */
 .bg-light {
     background-color: hsl(0, 0%, 4%) !important;
@@ -17,7 +39,7 @@ body {
 }
 /* ----------Landing Page---------- */
 #landingPage {
-    background-image: url('../images/Full_Deck_2.jpg');
+    background-image: url('../images/Mural_Higher_Res.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,14 +48,16 @@ body {
     width: auto;
     position: relative;
 }
-#landingPageLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(0, 33vh);
-    z-index: 3;
+/* ----------About Us ---------- */
+#aboutBackground {
+    background-image: url('../images/Boards.jpg');
+    height: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(233, 233, 233);
 }
-
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
@@ -42,6 +66,13 @@ body {
         display: block;
         z-index:3;
         transform: translate(-5px, -4px) rotate(135deg);
+    }
+    #landingPageLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(0, 33vh);
+        z-index: 3;
     }
     .dot {
         height: 90px;
@@ -59,6 +90,42 @@ body {
         background-color: rgb(16, 90, 16);
         transition: .4s;
     }
+    /* ---------- About Us ---------- */
+#aboutHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutImageContainer {
+    overflow: hidden;
+}
+.aboutImages {
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: auto;
+    transition: 0.4s;
+}
+.aboutImages:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+#aboutBackground > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.aboutImageContainer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#firstAboutImage {
+    background-image: url('../images/Entire_View.jpg');
+}
+#secondAboutImage {
+    background-image: url('../images/Service_With_A_Smile.jpg');
+    display: none;
+}
+#thirdAboutImage {
+    background-image: url('../images/Kenny_And_Mr_T.jpg');
+}
+.aboutText {
+    padding: 5%;
+}
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -68,6 +135,10 @@ body {
     .dot {
         margin-top: 530px;
     }
+    /* ---------- About Us ----------*/
+    #thirdAboutImage {
+        background-position: 25% 25%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -75,12 +146,21 @@ body {
     #landingPageLogo {
         width: 50%;
     }
+    #thirdAboutImage {
+        margin:5%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #landingPageLogo {
         width: 40%;
+    }
+    #secondAboutImage {
+        display: block;
+    }
+    #thirdAboutImage {
+        margin: 0;
     }
 }
 
