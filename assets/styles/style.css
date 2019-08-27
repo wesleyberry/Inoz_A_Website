@@ -176,9 +176,6 @@ h2 {
     text-align: center;
     margin: auto;
 }
-#spiritImage {
-    background-image: url('../images/Mextini_2.jpg');
-}
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
@@ -279,6 +276,10 @@ h2 {
         padding-right: 12%;
         width: 76%;
     }
+    /* ----------Bar ------------- */
+    .spiritImages {
+        display: none;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -355,6 +356,17 @@ h2 {
         padding-right: 0;
         width: 100%;
     }
+    /* -----------Bar------------- */
+    .spiritImages {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -365,5 +377,9 @@ h2 {
     }
     .dot {
         margin-top: 530px;
+    }
+    /* -----------Bar----------- */
+    .spiritImages {
+        max-width: 350px;
     }
 }
