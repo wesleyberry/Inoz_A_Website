@@ -30,6 +30,9 @@ ul {
 h2 {
     text-align: center;
 }
+.whiteRow {
+    background-color: rgb(248, 248, 248);;
+}
 /* ----------Navbar---------- */
 .bg-light {
     background-color: hsl(0, 0%, 4%) !important;
@@ -95,9 +98,6 @@ h2 {
     margin-bottom: 0px;
 }
 /* ----------Specials---------- */
-.carousel-item {
-    height: 300px;
-}
 .bd-example {
     background-color: rgb(29, 15, 2) !important;
 }
@@ -124,11 +124,15 @@ h2 {
     width: 30px;
     height: 30px;
 }
+.carousel-inner {
+    padding-bottom: 100px;
+    min-height: 60vh;
+}
 #wednesdaySpecial {
     background-image: url('../images/Margarita.jpg');
 }
 #thursdaySpecial {
-    background-image: url('../images/Taps_3.jpg');
+    background-image: url('../images/Draft_Beer.jpg');
 }
 #fridaySpecial {
     background-image: url('../images/Mextini.jpg');
@@ -136,14 +140,44 @@ h2 {
 #sundaySpecial {
     background-image: url('../images/Bloody_Mary.jpg');
 }
+.specialsRow {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .specialsBackgroundImage {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
     transform: translate(20, -60px);
 }
+.specialsImage {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+}
 #friday {
     transform: translate(50px, 0);
+}
+/* -----------Bar----------- */
+#brewImage {
+    background-image: url('../images/Taps.jpg');
+}
+.barImages {
+    max-height: 300px;
+    width:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 150px;
+}
+.centered {
+    text-align: center;
+    margin: auto;
+}
+#spiritImage {
+    background-image: url('../images/Mextini_2.jpg');
 }
 @media (min-width: 300px) {
     #landingPageLogo {
@@ -239,6 +273,12 @@ h2 {
         color: black;
         font-size: 1.5em;
     }
+    .specialsImage {
+        margin-top: 100px;
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 76%;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -307,6 +347,13 @@ h2 {
     #firstKitchenImage,
     #secondKitchenImage {
         display: block;
+    }
+    /* -----------Specials--------- */
+    .specialsImage {
+        margin-top: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
     }
 }
 

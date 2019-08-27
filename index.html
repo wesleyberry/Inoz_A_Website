@@ -29,7 +29,7 @@
                 <a class="nav-link" href="#kitchen">Kitchen</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Bar</a>
+                <a class="nav-link" href="#bar">Bar</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Live Music</a>
@@ -241,37 +241,61 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
             </ol>
-            <div class="carousel-inner">
-                <h1 class="specialsTitle"><u>Daily Bar Specials</u></h1>
-                <div class="carousel-item active">
-                    <h1 class="specialsDay">Monday</h1>
-                    <h2 class="specials">4.00 Well Drinks</h2>
+                <div class="carousel-inner">
+                    <h1 class="specialsTitle"><u>Daily Bar Specials</u></h1>
+                    <div class="carousel-item active">
+                        <h1 class="specialsDay">Monday</h1>
+                        <h2 class="specials">4.00 Well Drinks</h2>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="specialsDay">Tuesday</h1>
+                        <h2 class="specials">5.00 U-Call It <span style="font-size: .95rem">(Excludes frozen, blended, and specialty drinks)</span></h2>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-lg-4">
+                                <h1 class="specialsDay">Wednesday</h1>
+                                <h2 class="specials">5.00 Regular Frozen or Rocks Margaritas</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-4 specialsImage" id="wednesdaySpecial">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-lg-4">
+                                <h1 class="specialsDay">Thursday</h1>
+                                <h2 class="specials">3.00 Domestic / 5.00 Craft Drafts</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-4 specialsImage" id="thursdaySpecial">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-lg-4">
+                                <h1 class="specialsDay">Friday</h1>
+                                <h2 class="specials">10.00 Mextinis</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-4 specialsImage" id="fridaySpecial">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="specialsDay">Saturday</h1>
+                        <h2 class="specials">11.00 Domestic / 18.00 Craft Draft Pitchers</h2>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-lg-4">
+                                <h1 class="specialsDay">Sunday</h1>
+                                <h2 class="specials">6.00 Bloody Marys</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-4 specialsImage" id="sundaySpecial">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <h1 class="specialsDay">Tuesday</h1>
-                    <h2 class="specials">5.00 U-Call It <span style="font-size: .95rem">(Excludes frozen, blended, and specialty drinks)</span></h2>
-                </div>
-                <div class="carousel-item specialsBackgroundImage" id="wednesdaySpecial">
-                    <h1 class="specialsDay">Wednesday</h1>
-                    <h2 class="specials">5.00 Regular Frozen or Rocks Margaritas</h2>
-                </div>
-                <div class="carousel-item specialsBackgroundImage" id="thursdaySpecial">
-                    <h1 class="specialsDay">Thursday</h1>
-                    <h2 class="specials">3.00 Domestic / 5.00 Craft Drafts</h2>
-                </div>
-                <div class="carousel-item specialsBackgroundImage" id="fridaySpecial">
-                    <h1 class="specialsDay" id="friday">Friday</h1>
-                    <h2 class="specials" id="mextiniPrice">10.00 Mextinis</h2>
-                </div>
-                <div class="carousel-item">
-                    <h1 class="specialsDay">Saturday</h1>
-                    <h2 class="specials">11.00 Domestic / 18.00 Craft Draft Pitchers</h2>
-                </div>
-                <div class="carousel-item specialsBackgroundImage" id="sundaySpecial">
-                    <h1 class="specialsDay" id="sunday">Sunday</h1>
-                    <h2 class="specials" id="bloodyPrice">6.00 Bloody Marys</h2>
-                </div>
-            </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -280,6 +304,75 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            </div>
+        </div>
+    </div>
+    <!-- Bar -->
+    <div class="container-fluid" id="bar">
+        <div class="row justify-content-center whiteRow">
+            <h1 class="headers" id="barHeader"><u>Bar</u></h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-md-12 col-lg-4 centered">
+                <h1>Brews</h1>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 centered">
+                <h2>Domestic Bottled Beers</h2>
+                <p>Bud, Bud lt, Miller lt, Coors lt, Lonestar, MGD, Michelob Ultra, O'Doul's</p>
+                <br>
+                <h2>Premium Bottled Beers</h2>
+                <p>Shiner Bock, Blue Moon, Real Ale Blanco, Real Ale Fireman's 4, Landshark, Corona</p>
+                <br>
+                <h2>Specialty Bottle Beers</h2>
+                <p>Real Ale Devil's Backbone, Dos XX, Heineken, Cider, Gose, IPA</p>
+                <br>
+                <h2>Domestic Draft Beers</h2>
+                <p>(By the pitcher or by the glass)</p>
+                <p>Ziegenbock, Bud lt</p>
+                <br>
+                <h2>Specialty Craft, Local Brews</h2>
+                <p>(By the pitcher or by the glass)</p>
+                <p>Ask your server for today's selection</p>
+                <br>
+            </div>
+            <div class="col-xs-0 col-md-0 col-lg-4 d-flex align-items-center justify-content-center barImages" id="brewImage">
+            </div>
+        </div>
+        <div class="row justify-content-center whiteRow">
+            <div class="col-xs-12 col-md-12 col-lg-4 centered">
+                <h1>Spirits</h1>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 centered">
+                <h2>Margaritas</h2>
+                <ul>
+                    <li>Glass - Frozen or On-The-Rocks</li>
+                    <li>Pitcher (Frozen Only)</li>
+                    <li>Flavored Frozen (By the Glass Only)</li>
+                    <p>-Peach, Sangria, Raspberry, Strawberry</p>
+                </ul>
+                <br>
+                <h2>Ino'z Famous Mextini</h2>
+                <p>Special Blend of 100% Blue Agave Tequila, Gran Marnier, and Juices</p>
+                <br>
+                <h2>Ino'z Specialty Drinks</h2>
+                <ul>
+                    <li><b>Skinny Margarita</b></li>
+                    <li>-Herradura, Cointreau, Fresh Lime Juice, Agavy Syrup</li>
+                    <br>
+                    <li><b>Blanco Bullfrog</b></li>
+                    <li>-Parrot Bay, Blue Curacao, Midori, Pineapple Juice</li>
+                    <br>
+                    <li><b>Ciderita</b></li>
+                    <li>-Cider mixed with our Frozen Margarita</li>
+                    <br>
+                    <li><b>Texas Twister</b></li>
+                    <li>-Light, Dark, and 151 Rums, Pineapple Juice, OJ</li>
+                    <br>
+                    <li><b>Duck Duck Yum Yum</b></li>
+                    <li>-Absolut Mandarin, Midori, Cranberry Juice, Sprite, Fresh Lime Juice</li>
+                </ul>
+            </div>
+            <div class="col-xs-0 col-md-0 col-lg-4 d-flex align-items-center justify-content-center barImages" id="spiritImage">
             </div>
         </div>
     </div>
