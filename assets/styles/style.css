@@ -298,7 +298,7 @@ h2 {
         width: 60%;
     }
     .dot {
-        margin-top: 530px;
+        margin-top: 300px;
     }
     /* ---------- About Us ----------*/
     #thirdAboutImage {
@@ -385,9 +385,6 @@ h2 {
     #landingPageLogo {
         width: 500px;
         transform: translate(0, 27vh);
-    }
-    .dot {
-        margin-top: 530px;
     }
     /* -----------Bar----------- */
     .spiritImages {
