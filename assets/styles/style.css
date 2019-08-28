@@ -206,6 +206,25 @@ h2 {
     text-align: center;
     padding: 5%;
 }
+.bandsRow {
+    display: flex;
+    background-color: black !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#band1 {
+    background-image: url('../images/bands_2.jpg');
+}
+#band2 {
+    background-image: url('../images/bands_1.jpg');
+}
+#band3 {
+    background-image: url('../images/bands_3.jpg');
+}
+#band4 {
+    background-image: url('../images/bands_4.jpg');
+}
+
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
@@ -316,6 +335,16 @@ h2 {
     /* -------------Live Music--------- */
     #smallSchedule {
         display: block;
+    }
+    .bandsImages {
+        width: 100%;
+        height: 400px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        vertical-align: middle;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
