@@ -1,0 +1,25 @@
+{
+  "name": "inoz_a_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyberry/Inoz_A_Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesleyberry/Inoz_A_Website/issues"
+  },
+  "homepage": "https://github.com/wesleyberry/Inoz_A_Website#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0"
+  }
+}

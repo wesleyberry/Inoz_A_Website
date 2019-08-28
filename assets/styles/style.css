@@ -253,6 +253,11 @@ h2 {
 .hours {
     text-align: center;
 }
+/* -------------Map------------- */
+#map {
+    height: 400px;
+    width: 100%;
+}
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
