@@ -67,7 +67,7 @@ li {
     position: relative;
 }
 /* ----------About Us ---------- */
-#aboutBackground {
+.aboutBackground {
     background-image: url('../images/Boards_3.jpg');
     height: 100%;
     min-height: 80vh;
@@ -184,6 +184,28 @@ h2 {
     text-align: center;
     margin: auto;
 }
+/* ----------Live Music------------ */
+#musicImage {
+    background-image: url('../images/live_band.jpg');
+}
+.liveMusicText {
+    padding: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.wood {
+    background-image: url('../images/Boards_3.jpg');
+    height: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(233, 233, 233) !important;
+}
+#smallSchedule {
+    text-align: center;
+    padding: 5%;
+}
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
@@ -217,7 +239,7 @@ h2 {
         transition: .4s;
     }
     /* ---------- About Us ---------- */
-    #aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
+    .aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
         padding-top: 0;
     }
     .headers {
@@ -238,7 +260,7 @@ h2 {
         transform: scale(1.1) !important;
         transition: 0.4s !important;
     }
-    #aboutBackground > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.aboutImageContainer {
+    .aboutBackground > div:nth-child(1) > div.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.aboutImageContainer {
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -290,6 +312,10 @@ h2 {
     /* ----------Bar ------------- */
     .spiritImages {
         display: none;
+    }
+    /* -------------Live Music--------- */
+    #smallSchedule {
+        display: block;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -349,7 +375,7 @@ h2 {
     #thirdAboutImage {
         margin: 0;
     }
-    #aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
+    .aboutBackground > div:nth-child(2) > div.col-xs-12.col-md-12.col-lg-6.col-xl-6.aboutText {
         padding-top: 3%;
     }
     #firstAboutImage {
@@ -382,6 +408,9 @@ h2 {
         transform: rotate(90deg);
         font-family: 'Bree Serif', serif;
         font-size: 12em;
+    }
+    #smallSchedule {
+        display: none;
     }
 }
 

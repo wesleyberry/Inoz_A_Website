@@ -11,7 +11,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/calendar.css">
     <title>Inoz Brew and Chew - Wimberley</title>
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -32,7 +34,7 @@
                 <a class="nav-link" href="#bar">Bar</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Live Music</a>
+                <a class="nav-link" href="#liveMusic">Live Music</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -48,15 +50,14 @@
             <a class="navAnchor" href="#about">
                 <img src="https://img.icons8.com/ios-filled/100/000000/navigation.png" id="navigationArrow">
             </a>
-        </div>
-        
+        </div> 
     </div>
     <!-- About -->
     <div class="container-fluid" id="about">
         <div class="row justify-content-center">
             <h1 class="headers" id="aboutHeader"><u>About Ino'z</u></h1>
         </div>
-        <div id="aboutBackground">
+        <div class="aboutBackground">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 aboutText" id="aboutText1">
                     <p class="whiteP">Ino'z is your go to restaurant for great priced all American food with a few twists!! We are open 7 days a week for lunch and dinner. We cater to everyone whether your looking for a relaxing outdoor environment on our patio, a view of Cypress Creek from our indoor sunroom, or more of a sports vibe in our main dining area with our 4 TVs and bar. </p>
@@ -314,7 +315,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-xs-12 col-md-12 col-lg-4 centered">
-                <h1 class="drinksHeaders">Brews</h1>
+                <h1 class="drinksHeaders">BREWS</h1>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4 centered">
                 <h2>Domestic Bottled Beers</h2>
@@ -340,7 +341,7 @@
         </div>
         <div class="row justify-content-center whiteRow">
             <div class="col-xs-12 col-md-12 col-lg-4 centered">
-                <h1 class="drinksHeaders">Spirits</h1>
+                <h1 class="drinksHeaders">SPIRITS</h1>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4 centered">
                 <h2>Margaritas</h2>
@@ -379,7 +380,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-xs-12 col-md-12 col-lg-4 centered">
-                <h1 class="drinksHeaders">Wine</h1>
+                <h1 class="drinksHeaders">WINE</h1>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4 centered">
                 <h2>House Wines</h2>
@@ -400,6 +401,44 @@
             </div>
         </div>
     </div>
+    <!-- Live Music -->
+    <div class="container-fluid" id="liveMusic">
+        <div class="row justify-content-center whiteRow">
+            <h1 class="headers"><u>Live Music</u></h1>
+        </div>
+        <div class="row justify-content-center wood">
+            <div class="col-xs-12 col-md-12 col-lg-8 col-xl-8 liveMusicText">
+                <h3>We offer live music on the stage overlooking our outdoor patio during the summer months.</h3>
+                <h3>And remember... we NEVER charge a cover!</h3>
+                <h4>** ALL SHOWS WEATHER PERMITTING - SUBJECT TO CHANGE WITHOUT NOTICE**</h4>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 col-xl-4 aboutImageContainer">
+                <div class="aboutImages" id="musicImage">
+
+                </div>
+            </div> 
+        </div>
+        <div class="row justify-content-center" style="background-color: rgb(233, 233, 233);">
+            <h2 style="margin-bottom: 10px;">Band Schedule</h2>
+        </div>
+        <div class="row wood">
+            <div id='wrap'>
+                <div id='calendar'></div>
+                <div style='clear:both'></div>
+            </div>
+            <div id="smallSchedule" class="col-12">
+                <h3>Thursday: 7-10 PM</h3>
+                <h3>Friday: 7-10 PM</h3>
+                <h3>Saturday: 7-10 PM</h3>
+                <h3>Sunday: 12 - 4 PM</h3>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
     <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/calendar/events.js"></script>
+    <script src="./assets/scripts/calendar/calendar.js"></script>
 </body>
 </html>
