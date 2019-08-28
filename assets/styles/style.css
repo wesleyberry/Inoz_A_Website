@@ -258,6 +258,9 @@ h2 {
     height: 400px;
     width: 100%;
 }
+#outerMap {
+    padding: 20px;
+}
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
