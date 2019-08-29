@@ -5,6 +5,8 @@ module.exports = (sequelize, DataTypes) => {
         month: DataTypes.INTEGER,
         day: DataTypes.INTEGER,
         time: DataTypes.STRING
+    }, {
+        timestamps: false
     });
 
     return Band;

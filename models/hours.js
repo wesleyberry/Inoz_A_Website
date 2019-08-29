@@ -4,6 +4,8 @@ module.exports = (sequelize, DataTypes) => {
         hours: DataTypes.STRING,
         current: DataTypes.BOOLEAN,
         season: DataTypes.STRING
+    }, {
+        timestamps: false
     });
 
     return Hour;

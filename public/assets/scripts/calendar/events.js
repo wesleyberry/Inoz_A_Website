@@ -3,6 +3,9 @@ $(document).ready(function() {
   var d = date.getDate();
   var m = date.getMonth();
   var y = date.getFullYear();
+  console.log(d);
+  console.log(m);
+  console.log(y);
   /*  className colors
     
   className: default(transparent), important(red), chill(pink), success(green), info(blue)

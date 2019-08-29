@@ -3,6 +3,8 @@ module.exports = (sequelize, DataTypes) => {
         day: DataTypes. STRING,
         special: DataTypes.STRING,
         type: DataTypes. STRING
+    }, {
+        timestamps: false
     });
 
     return Special;
