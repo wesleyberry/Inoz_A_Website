@@ -109,8 +109,11 @@ h2 {
     margin-bottom: 0px;
 }
 /* ----------Specials---------- */
-.bd-example {
+.background-carousel-1 {
     background-color: rgb(34, 21, 12) !important;
+}
+.background-carousel-2 {
+    background-color: #105a10 !important;
 }
 .specialsTitle {
     color: white;

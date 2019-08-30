@@ -1,9 +1,13 @@
-const path = require("path")
+const path = require("path");
 const router = require('express').Router();
 const db = require('../models');
 
-router.route('/bands').get((req, res) => {
-    db.Band.findAll({})
+router.route('/hours').get((req, res) => {
+    db.Hour.findAll({
+        where: {
+            current: true
+        }
+    })
     .then(response => {
         res.json(response);
     })
