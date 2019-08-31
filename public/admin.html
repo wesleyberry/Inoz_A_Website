@@ -40,6 +40,40 @@
                 <div class="row" id="adminSpecials">
                     <div class="col-12">
                         <h2>Specials</h2>
+                        <form>
+                            <div class="row justify-content-center rowSpecial">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Day
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <button class="dropdown-item" id="Monday" type="button">Monday</button >
+                                        <button class="dropdown-item" id="Tuesday" type="button">Tuesday</button >
+                                        <button class="dropdown-item" id="Wednesday" type="button">Wednesday</button >
+                                        <button class="dropdown-item" id="Thursday" type="button">Thursday</button >
+                                        <button class="dropdown-item" id="Friday" type="button">Friday</button >
+                                        <button class="dropdown-item" id="Saturday" type="button">Saturday</button >
+                                        <button class="dropdown-item" id="Sunday" type="button">Sunday</button >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center rowSpecial">
+                                <label for="specialInput">Special</label>
+                                <input type="text" class="form-control" id="specialInput" aria-describedby="specialHelp" placeholder="Enter special">
+                            </div>
+                            <div class="row justify-content-center rowSpecial">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Type
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <button class="dropdown-item" id="Bar" type="button">Bar</button >
+                                        <button class="dropdown-item" id="Food" type="button">Food</button >
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="Submit">
+                        </form>
                         <table class="table">
                             <thead>
                                 <tr>
