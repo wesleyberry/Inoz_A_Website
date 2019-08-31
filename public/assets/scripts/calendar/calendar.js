@@ -147,7 +147,18 @@
             eventSources.push(options.events);
             delete options.events;
         }
-        
+        axios.get('/api/bands').then(response => {
+            var bandInfo = response.data;
+            for(var i = 0; i < bandInfo.length; i++) {
+                eventSources[0].push({
+                    className: 'important',
+                    title: bandInfo[i].band,
+                    start: new Date(bandInfo[i].year, bandInfo[i].month, bandInfo[i].day, bandInfo[i].start),
+                    end: new Date(bandInfo[i].year, bandInfo[i].month, bandInfo[i].day, bandInfo[i].end),
+                    allDay: false
+                });
+            }
+        }) ;
     
         options = $.extend(true, {},
             defaults,

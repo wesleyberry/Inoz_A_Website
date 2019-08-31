@@ -21,9 +21,9 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = false;
 }
 
-// app.get("/", function(req, res) {
-//   res.sendFile(path.join(__dirname, "index.html"));
-// });
+app.get("/admin", function(req, res) {
+  res.sendFile(path.join(__dirname, "/public/admin.html"));
+});
 
 db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {

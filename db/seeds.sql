@@ -23,7 +23,7 @@ INSERT INTO specials (day, special, type)
 			('Saturday', '11.00 Domestic / 18.00 Craft Draft Pitchers', 'Bar'),
 			('Sunday', '6.00 Bloody Marys', 'Bar');
 			            
-INSERT INTO bands (band, year, month, day, time)
-	VALUES ('band1', 2019, 9, 6, '7:00 PM - 10:00 PM'),
-			('band2', 2019, 9, 7, '7:00 PM - 10:00 PM'),
-			('band3', 2019, 9, 8, '12:00 PM - 4:00 PM');
+INSERT INTO bands (band, year, month, day, start, end)
+	VALUES ('band1', 2019, 9, 6, '19', '22'),
+			('band2', 2019, 9, 7, '19', '22'),
+			('band3', 2019, 9, 8, '12', '16');

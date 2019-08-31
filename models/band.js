@@ -4,7 +4,8 @@ module.exports = (sequelize, DataTypes) => {
         year: DataTypes.INTEGER,
         month: DataTypes.INTEGER,
         day: DataTypes.INTEGER,
-        time: DataTypes.STRING
+        start: DataTypes.STRING,
+        end: DataTypes.STRING
     }, {
         timestamps: false
     });
