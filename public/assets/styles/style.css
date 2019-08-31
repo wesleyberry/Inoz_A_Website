@@ -264,6 +264,17 @@ h2 {
 #outerMap {
     padding: 20px;
 }
+/* ---------Admin------------- */
+#adminHours {
+    background-color: rgb(233, 233, 233) !important;
+}
+#adminSpecials {
+    background-color: white;
+}
+#adminHours,
+#adminSpecials {
+    padding: 5%;
+}
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;

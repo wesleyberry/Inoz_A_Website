@@ -26,4 +26,21 @@ router.route('/specialsBar').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+router.route('/specials').get((req, res) => {
+    db.Special.findAll({})
+    .then(response => {
+        res.json(response);
+    })
+    .catch(err => res.json(err));
+});
+
+router.delete("/specials:id", (req, res) => {
+    db.Special.destroy({
+        where: {
+            id: req.params.id
+        }
+    }).then(res.send(200))
+    .catch(err => res.json(err))
+});
+
 module.exports = router;

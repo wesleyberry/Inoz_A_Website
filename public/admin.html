@@ -21,25 +21,42 @@
             <h1>Ino'z Admin</h1>
         </div>
             <!-- Hours CRUD -->
-        <div class="row"></div>
-            <div class="col-6">
+        <div class="row" id="adminHours">
+            <div class="col-12">
                 <div class="row">
                     <div class="col-12">
                         <h2>Hours</h2>
                         <select class="custom-select">
-                            <option selected>Select Season</option>
                             <option value="1">Summer</option>
                             <option value="2">Winter</option>
                         </select>
                     </div>
                 </div>
             </div>
-            <!-- Specials CRUD -->
-            <div class="col-6">
+        </div>
 
+            <!-- Specials CRUD -->
+            <div class="col-12">
+                <div class="row" id="adminSpecials">
+                    <div class="col-12">
+                        <h2>Specials</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col">D.O.W.</th>
+                                <th scope="col">Special</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="specialsGoHere">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             <!-- Bands CRUD -->
-            <div class="col-6">
+            <div class="col-12">
 
             </div>
         </div>

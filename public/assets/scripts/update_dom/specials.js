@@ -155,3 +155,26 @@ axios.get('/api/specialsFood').then(response => {
         )
     }
 }).catch(err => console.log(err));
+
+axios.get('api/specials').then(response => {
+    const results = response.data;
+    for(var i = 0; i < results.length; i++) {
+        $('#specialsGoHere').append(
+            `<tr>
+                <th scope="row">${results[i].day}</th>
+                <td>${results[i].special}</td>
+                <td>${results[i].type}</td>
+                <td>
+                    <button type="button" class="btn btn-danger specialsDelete" id=${results[i].id}>X</button>
+                </td>
+            </tr>`
+        )
+    }
+}).catch(err => console.log(err));
+
+$(document).on('click', '.specialsDelete', function() {
+    const id = this.id;
+    axios.delete('/api/specials' + id, (req, res) => {})
+    .then(location.reload())
+    .catch(err => console.log(err));
+});
