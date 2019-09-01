@@ -178,3 +178,10 @@ $(document).on('click', '.specialsDelete', function() {
     .then(location.reload())
     .catch(err => console.log(err));
 });
+
+$('#submitSpecial').on('click', function() {
+    event.preventDefault();
+    var day = $('#exampleFormControlSelect1').val();
+    var special = $('#specialInput').val();
+    var type = $('#exampleFormControlSelect2').val();
+})
