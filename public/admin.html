@@ -34,74 +34,80 @@
                 </div>
             </div>
         </div>
-
+    </div>
             <!-- Specials CRUD -->
-            <div class="col-12">
-                <div class="row" id="adminSpecials">
-                    <div class="col-12">
-                        <h2>Specials</h2>
-                        <form>
-                            <div class="row justify-content-center rowSpecial">
-                                <!-- <div class="btn-group">
-                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Day
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <button class="dropdown-item" id="Monday" type="button">Monday</button >
-                                        <button class="dropdown-item" id="Tuesday" type="button">Tuesday</button >
-                                        <button class="dropdown-item" id="Wednesday" type="button">Wednesday</button >
-                                        <button class="dropdown-item" id="Thursday" type="button">Thursday</button >
-                                        <button class="dropdown-item" id="Friday" type="button">Friday</button >
-                                        <button class="dropdown-item" id="Saturday" type="button">Saturday</button >
-                                        <button class="dropdown-item" id="Sunday" type="button">Sunday</button >
-                                    </div>
-                                </div> -->
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="row" id="adminSpecials">
+                <div class="col-12">
+                    <h2>Specials</h2>
+                    <h4>**THERE MUST BE 7 OR 0 SPECIALS FOR EACH TYPE**</h4>
+                    <h4>**SPECIALS MUST BE ENTERED IN ORDER, STARTING WITH MONDAY**</h4>
+                    <form>
+                        <div class="row justify-content-center rowSpecial">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Day of the Week</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center rowSpecial">
+                            <label for="specialInput">Special</label>
+                            <input type="text" class="form-control" id="specialInput" aria-describedby="specialHelp" placeholder="Enter special">
+                        </div>
+                        <div class="row justify-content-center rowSpecial">
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Example select</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option value="Monday">Monday</option>
-                                        <option value="Tuesday">Tuesday</option>
-                                        <option value="Wednesday">Wednesday</option>
-                                        <option value="Thursday">Thursday</option>
-                                        <option value="Friday">Friday</option>
-                                        <option value="Saturday">Saturday</option>
-                                        <option value="Sunday">Sunday</option>
+                                    <label for="exampleFormControlSelect1">Type</label>
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                        <option value="Bar">Bar</option>
+                                        <option value="Food">Food</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="row justify-content-center rowSpecial">
-                                <label for="specialInput">Special</label>
-                                <input type="text" class="form-control" id="specialInput" aria-describedby="specialHelp" placeholder="Enter special">
-                            </div>
-                            <div class="row justify-content-center rowSpecial">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Example select</label>
-                                        <select class="form-control" id="exampleFormControlSelect2">
-                                            <option value="Bar">Bar</option>
-                                            <option value="Food">Food</option>
-                                        </select>
-                                    </div>
-                            </div>
-                            <input class="btn btn-primary" type="submit" value="Submit" id="submitSpecial">
-                        </form>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                <th scope="col">D.O.W.</th>
-                                <th scope="col">Special</th>
-                                <th scope="col">Type</th>
-                                <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="specialsGoHere">
-                            </tbody>
-                        </table>
-                    </div>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Submit" id="submitSpecial">
+                    </form>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">D.O.W.</th>
+                            <th scope="col">Special</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="specialsGoHere">
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </div>
+    </div>
             <!-- Bands CRUD -->
-            <div class="col-12">
-
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="row" id="adminBands">
+                <div class="row-12">
+                    <h2>Bands</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">Band</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bandsGoHere">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -110,6 +116,7 @@
     <script src="./assets/scripts/calendar/events.js"></script>
     <script src="./assets/scripts/calendar/calendar.js"></script>
     <script src="./assets/scripts/update_dom/hours.js"></script>
+    <script src="./assets/scripts/update_dom/bands.js"></script>
     <script src="./assets/scripts/update_dom/specials.js"></script>
 </body>
 </html>

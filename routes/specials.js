@@ -43,4 +43,14 @@ router.delete("/specials:id", (req, res) => {
     .catch(err => res.json(err))
 });
 
+router.post('/specials', (req, res) => {
+    const special = req.body;
+    db.Special.create({
+        day: special.day,
+        special: special.special,
+        type: special.type
+    }).then(response => res.json(response))
+    .catch(err => res.json(err))
+});
+
 module.exports = router;

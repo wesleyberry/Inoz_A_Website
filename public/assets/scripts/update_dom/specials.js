@@ -184,4 +184,10 @@ $('#submitSpecial').on('click', function() {
     var day = $('#exampleFormControlSelect1').val();
     var special = $('#specialInput').val();
     var type = $('#exampleFormControlSelect2').val();
+    axios.post('/api/specials', {
+        day, 
+        special,
+        type
+    }).then(() => location.reload())
+    .catch(err => console.log(err));
 })

@@ -10,4 +10,13 @@ router.route('/bands').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+router.delete("/bands:id", (req, res) => {
+    db.Band.destroy({
+        where: {
+            id: req.params.id
+        }
+    }).then(res.send(200))
+    .catch(err => res.json(err))
+});
+
 module.exports = router;

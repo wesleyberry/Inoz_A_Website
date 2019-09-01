@@ -271,8 +271,12 @@ h2 {
 #adminSpecials {
     background-color: white;
 }
+#adminBands {
+    background-color: rgb(233, 233, 233) !important;
+}
 #adminHours,
-#adminSpecials {
+#adminSpecials,
+#adminBands {
     padding: 5%;
 }
 .table {
