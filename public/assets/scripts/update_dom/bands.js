@@ -55,7 +55,7 @@ axios.get('api/bands').then(response => {
         $('#bandsGoHere').append(
             `<tr>
                 <th scope="row">${results[i].band}</th>
-                <td>${month} ${results[i].day} ${results[i].year}</td>
+                <td>${month} ${results[i].day}, ${results[i].year}</td>
                 <td>${time}</td>
                 <td>
                     <button type="button" class="btn btn-danger bandDelete" id=${results[i].id}>X</button>
@@ -69,5 +69,25 @@ $(document).on('click', '.bandDelete', function() {
     const id = this.id;
     axios.delete('/api/bands' + id, (req, res) => {})
     .then(location.reload())
+    .catch(err => console.log(err));
+});
+
+$('#submitBand').on('click', function() {
+    event.preventDefault();
+    var band = $('#bandName').val();
+    var year = $('#year').val();
+    var day = $('#day').val();
+    var month = $('#month').val();
+    var time = $('#time').val().split(' ');
+    var start = time[0];
+    var end = time[1];
+    axios.post('/api/bands', {
+        band,
+        year,
+        day,
+        month,
+        start,
+        end
+    }).then(() => location.reload())
     .catch(err => console.log(err));
 });

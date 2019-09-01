@@ -20,7 +20,7 @@
         <div class="row">
             <h1>Ino'z Admin</h1>
         </div>
-            <!-- Hours CRUD -->
+        <!-- Hours CRUD -->
         <div class="row" id="adminHours">
             <div class="col-12">
                 <div class="row">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-            <!-- Specials CRUD -->
+    <!-- Specials CRUD -->
     <div class="container-fluid">
         <div class="col-12">
             <div class="row" id="adminSpecials">
@@ -89,12 +89,56 @@
             </div>
         </div>
     </div>
-            <!-- Bands CRUD -->
+    <!-- Bands CRUD -->
     <div class="container-fluid">
         <div class="col-12">
             <div class="row" id="adminBands">
-                <div class="row-12">
+                <div class="col-12">
                     <h2>Bands</h2>
+                    <form>
+                        <div class="row justify-content-center">
+                            <label for="bandName">Band Name</label>
+                            <input type="text" class="form-control" id="bandName" aria-describedby="specialHelp" placeholder="Enter band">
+                        </div>
+                        <div class="row justify-content-center">
+                            <label for="year">Year</label>
+                            <input type="text" class="form-control" id="year" aria-describedby="specialHelp" placeholder="Enter year">
+                        </div>
+                        <div class="row justify-content-center">
+                            <label for="day">Day Number</label>
+                            <input type="text" class="form-control" id="day" aria-describedby="specialHelp" placeholder="Enter day">
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="form-group">
+                                <label for="month">Month</label>
+                                <select class="form-control" id="month">
+                                    <option value="0">January</option>
+                                    <option value="1">February</option>
+                                    <option value="2">March</option>
+                                    <option value="3">April</option>
+                                    <option value="4">May</option>
+                                    <option value="5">June</option>
+                                    <option value="6">July</option>
+                                    <option value="7">August</option>
+                                    <option value="8">September</option>
+                                    <option value="9">October</option>
+                                    <option value="10">November</option>
+                                    <option value="11">December</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center rowSpecial">
+                                <div class="form-group">
+                                    <label for="time">Time</label>
+                                    <select class="form-control" id="time">
+                                        <option value="12 16">12:00 PM - 4:00 PM</option>
+                                        <option value="18 22">6:00 PM - 10:00 PM</option>
+                                        <option value="19 22">7:00 PM - 10:00 PM</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Submit" id="submitBand">
+                    </form>
                     <table class="table">
                         <thead>
                             <tr>

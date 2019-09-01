@@ -19,4 +19,17 @@ router.delete("/bands:id", (req, res) => {
     .catch(err => res.json(err))
 });
 
+router.post('/bands', (req, res) => {
+    const band = req.body;
+    db.Band.create({
+        band: band.band,
+        year: band.year,
+        day: band.day,
+        month: band.month,
+        start: band.start,
+        end: band.end
+    }).then(response => res.json(response))
+    .catch(err => res.json(err))
+})
+
 module.exports = router;

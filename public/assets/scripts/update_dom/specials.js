@@ -190,4 +190,4 @@ $('#submitSpecial').on('click', function() {
         type
     }).then(() => location.reload())
     .catch(err => console.log(err));
-})
+});
