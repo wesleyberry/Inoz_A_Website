@@ -1,10 +1,6 @@
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
-const googleMapsClient = require('@google/maps').createClient({
-  key: process.env.API_KEY,
-  Promise: Promise
-});
 const session = require("express-session");
 const passport = require("./config/passport");
 const db = require('./models');
@@ -21,15 +17,6 @@ app.use(passport.session());
 app.use(routes);
 
 const syncOptions = { force: false };
-
-googleMapsClient.geocode({address: '14004 Ranch Road 12, Wimberley, TX'})
-  .asPromise()
-  .then((response) => {
-    console.log(response.json.results);
-  })
-  .catch((err) => {
-    console.log(err);
-});
 
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = false;
