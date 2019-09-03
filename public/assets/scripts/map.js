@@ -1,4 +1,3 @@
-// Initialize and add the map
 function initMap() {
     var position = {lat: 29.996620, lng: -98.096525};
     var map = new google.maps.Map(document.getElementById('map'), {zoom: 18, center: position});
