@@ -33,3 +33,11 @@ $('#logout').on('click', function() {
     .then(() => window.location.assign('/login'))
     .catch(err => console.log(err));
 });
+
+function checkDB() {
+    axios.post('/api/users/checkDB', {})
+    .then(() => console.log(200))
+    .catch(() => console.log(''));
+}
+
+checkDB();

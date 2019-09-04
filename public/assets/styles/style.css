@@ -287,6 +287,29 @@ h2 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+#submitSignUp {
+    display: none;
+}
+#credentialsContainer {
+    background-color: rgb(34, 21, 12) !important;
+    padding: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: rgb(34, 21, 12) !important;
+    margin: auto;
+    color: rgb(233, 233, 233) !important;
+}
+#submitCredentials {
+    background-color: rgb(233, 233, 233) !important;
+    border-color: rgb(233, 233, 233) !important;
+    color: rgb(34, 21, 12) !important;
+}
+#submitCredentials:hover {
+    background-color: #105a10 !important;
+    color: rgb(233, 233, 233) !important;
+    border-color: #105a10 !important;
+}
 @media (min-width: 300px) {
     #landingPageLogo {
         width: 80%;
