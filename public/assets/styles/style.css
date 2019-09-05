@@ -71,7 +71,6 @@ li {
 }
 /* ----------About Us ---------- */
 .aboutBackground {
-    background-image: url('../images/Boards_3.jpg');
     height: 100%;
     min-height: 80vh;
     width: auto;
@@ -169,9 +168,6 @@ h2 {
     transform: translate(50px, 0);
 }
 /* -----------Bar----------- */
-#brewImage {
-    background-image: url('../images/Taps.jpg');
-}
 .barImages {
     max-height: 300px;
     width:auto;
@@ -185,9 +181,6 @@ h2 {
     margin: auto;
 }
 /* ----------Live Music------------ */
-#musicImage {
-    background-image: url('../images/live_band.jpg');
-}
 .liveMusicText {
     padding: 3%;
     margin-top: auto;
@@ -195,7 +188,6 @@ h2 {
     text-align: center;
 }
 .wood {
-    background-image: url('../images/Boards_3.jpg');
     height: 100%;
     width: auto;
     background-position: center;
@@ -213,18 +205,6 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
-}
-#band1 {
-    background-image: url('../images/bands_2.jpg');
-}
-#band2 {
-    background-image: url('../images/bands_1.jpg');
-}
-#band3 {
-    background-image: url('../images/bands_3.jpg');
-}
-#band4 {
-    background-image: url('../images/bands_4.jpg');
 }
 #liveMusic > div.row.justify-content-center.wood > div.col-xs-12.col-md-12.col-lg-8.col-xl-8.liveMusicText > h3:nth-child(1),
 #liveMusic > div.row.justify-content-center.wood > div.col-xs-12.col-md-12.col-lg-8.col-xl-8.liveMusicText > h3:nth-child(2) {
@@ -363,15 +343,9 @@ h2 {
         margin-top: auto;
         margin-bottom: auto;
     }
-    #firstAboutImage {
-        background-image: url('../images/Entire_View.jpg');
-    }
     #secondAboutImage {
         background-image: url('../images/Service_With_A_Smile.jpg');
         display: none;
-    }
-    #thirdAboutImage {
-        background-image: url('../images/Kenny_And_Mr_T.jpg');
     }
     .aboutText {
         padding: 3%;

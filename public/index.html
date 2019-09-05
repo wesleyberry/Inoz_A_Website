@@ -59,13 +59,13 @@
         <div class="row justify-content-center">
             <h1 class="headers" id="aboutHeader"><u>About Ino'z</u></h1>
         </div>
-        <div class="aboutBackground">
+        <div class="aboutBackground lazyload" data-bgset="./assets/images/Boards_3.jpg">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 aboutText" id="aboutText1">
                     <p class="whiteP">Ino'z is your go to restaurant for great priced all American food with a few twists!! We are open 7 days a week for lunch and dinner. We cater to everyone whether your looking for a relaxing outdoor environment on our patio, a view of Cypress Creek from our indoor sunroom, or more of a sports vibe in our main dining area with our 4 TVs and bar. </p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 aboutImageContainer">
-                    <div class="aboutImages" id="firstAboutImage">
+                    <div class="aboutImages lazyload" id="firstAboutImage" data-bgset="/assets/images/Entire_View.jpg">
 
                     </div>
                 </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 aboutImageContainer">
-                    <div class="aboutImages" id="secondAboutImage">
+                    <div class="aboutImages lazyload" id="secondAboutImage" data-bgset="/assets/images/Service_With_A_Smile.jpg">
 
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     <p class="whiteP">The staff sees each other as well as our customers as family, working hard every day to deliver the best experience possible!!  </p>
                 </div>
                 <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 aboutImageContainer">
-                    <div class="aboutImages" id="thirdAboutImage">
+                    <div class="aboutImages lazyload" id="thirdAboutImage" data-bgset="/assets/images/Kenny_And_Mr_T.jpg">
 
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                 <p>Ask your server for today's selection</p>
                 <br>
             </div>
-            <div class="col-xs-0 col-md-0 col-lg-4 d-flex align-items-center justify-content-center barImages" id="brewImage">
+            <div class="col-xs-0 col-md-0 col-lg-4 d-flex align-items-center justify-content-center barImages lazyload" data-bgset="./assets/images/Taps.jpg">
             </div>
         </div>
         <div class="row justify-content-center whiteRow">
@@ -340,14 +340,14 @@
         <div class="row justify-content-center whiteRow">
             <h1 class="headers"><u>Live Music</u></h1>
         </div>
-        <div class="row justify-content-center wood">
+        <div class="row justify-content-center wood lazyload" data-bgset="/assets/images/Boards_3.jpg">
             <div class="col-xs-12 col-md-12 col-lg-8 col-xl-8 liveMusicText">
                 <h3>We offer live music on the stage overlooking our outdoor patio during the summer months.</h3>
                 <h3>And remember... we NEVER charge a cover!</h3>
                 <h4>** ALL SHOWS WEATHER PERMITTING - SUBJECT TO CHANGE WITHOUT NOTICE**</h4>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4 col-xl-4 aboutImageContainer">
-                <div class="aboutImages" id="musicImage">
+                <div class="aboutImages lazyload" id="musicImage" data-bgset="./assets/images/live_band.jpg">
 
                 </div>
             </div> 
@@ -355,7 +355,7 @@
         <div class="row justify-content-center" style="background-color: rgb(233, 233, 233);">
             <h2 style="margin-bottom: 10px;">Band Schedule</h2>
         </div>
-        <div class="row wood">
+        <div class="row wood lazyload" data-bgset="/assets/images/Boards_3.jpg">
             <div id='wrap'>
                 <div id='calendar'></div>
                 <div style='clear:both'></div>
@@ -369,10 +369,10 @@
             </div>
         </div>
         <div class="row bandsRow">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages" id="band1"></div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages" id="band2"></div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages" id="band3"></div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages" id="band4"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages lazyload" id="band1" data-bgset='/assets/images/bands_2.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages lazyload" id="band2" data-bgset='/assets/images/bands_1.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages lazyload" id="band3" data-bgset='/assets/images/bands_3.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 bandsImages lazyload" id="band4" data-bgset='/assets/images/bands_4.jpg'></div>
         </div>
     </div>
     <!-- Contact -->
@@ -401,6 +401,8 @@
         </div>
     </div>
     <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
+    <script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
+    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/calendar/events.js"></script>
