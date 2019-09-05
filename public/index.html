@@ -47,10 +47,10 @@
     </nav>
     <!-- Landing Page -->
     <div id="landingPage">
-        <img src='./assets/images/Logo3.png' alt="Ino'z Logo" id="landingPageLogo">
+        <img data-src='./assets/images/Logo3.png' alt="Ino'z Logo" id="landingPageLogo" class="lazyload">
         <div class="dot">
             <a class="navAnchor" href="#about">
-                <img src="https://img.icons8.com/ios-filled/100/000000/navigation.png" id="navigationArrow">
+                <img data-src="https://img.icons8.com/ios-filled/100/000000/navigation.png" id="navigationArrow" class="lazyload">
             </a>
         </div> 
     </div>
@@ -308,8 +308,8 @@
                 </ul>
             </div>
             <div class="col-xs-0 col-md-0 col-lg-4">
-                <img src='./assets/images/Mextini_2.jpg' alt="Mextini" class="spiritImages">
-                <img src='./assets/images/Bullfrog.jpg' alt="Blanco Bullfrog" class="spiritImages" id="bullfrog">
+                <img data-src='./assets/images/Mextini_2.jpg' alt="Mextini" class="spiritImages lazyload">
+                <img data-src='./assets/images/Bullfrog.jpg' alt="Blanco Bullfrog" class="spiritImages lazyload" id="bullfrog">
             </div>
         </div>
         <div class="row justify-content-center">
@@ -400,6 +400,7 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/calendar/events.js"></script>
