@@ -58,4 +58,32 @@ router.put('/hours/:value', isAuthenticated, (req, res) => {
     }
 });
 
+router.put('/hours/tuesdays/:value', isAuthenticated, (req, res) => {
+    const value = req.params.value;
+    console.log(value);
+    if(req.user.name === 'rootroot') {
+        if(value === '1') {
+            db.Hour.update({
+                hours: '11:00 AM - 9:00 PM'
+            }, {
+                where: {
+                    day: 'Tuesday'
+                }
+            })
+            .then(res.send(200))
+            .catch(err => res.json(err));
+        } else if(value === '2') {
+            db.Hour.update({
+                hours: 'CLOSED'
+            }, {
+                where: {
+                    day: 'Tuesday'
+                }
+            })
+            .then(res.send(200))
+            .catch(err => res.json(err));
+        }
+    }
+})
+
 module.exports = router;

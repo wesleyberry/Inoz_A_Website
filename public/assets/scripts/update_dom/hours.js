@@ -5,11 +5,20 @@ axios.get('/api/hours').then(response => {
     }
 }).catch(err => console.log(err));
 
-$('.custom-select').on('click', function() {
+$('.custom-select-1').on('click', function() {
     axios.put('/api/hours/' + this.value, (req, res) => {
     }).then(response => {
         if(response.data === 'OK') {
             console.log('Hours Changed!');
+        }
+    }).catch(err => console.log(err))
+});
+
+$('.custom-select-2').on('click', function() {
+    axios.put('/api/hours/tuesdays/' + this.value, (req, res) => {
+    }).then(response => {
+        if(response.data === 'OK') {
+            console.log('Tuesday hours Changed!');
         }
     }).catch(err => console.log(err))
 });
