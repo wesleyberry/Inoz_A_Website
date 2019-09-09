@@ -6,11 +6,6 @@ sr.reveal('#landingPageLogo', {
     distance: '500px',
 });
 // About Us
-sr.reveal('#firstAboutImage', {
-    duration: 750, 
-    origin: 'bottom',
-    distance: '500px',
-});
 sr.reveal('#secondAboutImage', {
     duration: 750, 
     delay: 250,
