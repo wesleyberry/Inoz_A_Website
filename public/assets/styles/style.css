@@ -13,6 +13,7 @@ body {
 .row {
     margin-right: 0px;
     margin-left: 0px;
+    text-align: center;
 }
 .col-xl-12,
 .col-sm-12,
@@ -24,6 +25,8 @@ body {
 }
 ul {
     list-style: none;
+    list-style-position: inherit;
+    list-style-image: none;
     text-align: center;
     padding-inline-start: 0;
 }
@@ -34,6 +37,7 @@ h2 {
     text-align: center;
     margin-top: 10px !important;
     color: #105a10 !important;
+    margin-bottom: 10px !important;
 }
 p {
     color: rgb(34, 21, 12) !important;
