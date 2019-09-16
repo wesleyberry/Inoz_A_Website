@@ -8,7 +8,19 @@ var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
 if (env === "production") {
-  // var sequelize = new Sequelize(process.env["JAWSDB_URL"]);
+  var sequelize = new Sequelize(
+    process.env.database,
+    process.env.username1,
+    process.env.password1,
+    {
+      "username":process.env.username1,
+      "password":process.env.password1,
+      "database":process.env.database,
+      "dialect": "mysql",
+      "host":process.env.host,
+      "port":process.env.port2
+    }
+  );
 } else if (env === "development"){
 //   var sequelize = new Sequelize(
 //     process.env.db_database,
