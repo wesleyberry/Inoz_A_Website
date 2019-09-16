@@ -25,10 +25,17 @@ if (env === "production") {
 //   )
 // } else {
   var sequelize = new Sequelize(
-    config.database,
-    config.username,
-    config.password,
-    config
+    process.env.database,
+    process.env.username1,
+    process.env.password1,
+    {
+      "username":process.env.username1,
+      "password":process.env.password1,
+      "database":process.env.database,
+      "dialect": "mysql",
+      "host":process.env.host,
+      "port":process.env.port2
+    }
   );
 }
 
