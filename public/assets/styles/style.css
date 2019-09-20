@@ -151,25 +151,25 @@ h2 {
     min-height: 60vh;
 }
 #mondaySpecial {
-    background-image: url('../images/vodka_cran.jpg');
+    background-image: url('../images/vodka_cran_square.jpg');
 }
 #tuesdaySpecial {
-    background-image: url('../images/whiskey.jpg');
+    background-image: url('../images/whiskey_square.jpg');
 }
 #wednesdaySpecial {
-    background-image: url('../images/margaritas.jpg');
+    background-image: url('../images/margaritas_square.jpg');
 }
 #thursdaySpecial {
-    background-image: url('../images/beers.jpg');
+    background-image: url('../images/beers_square.jpg');
 }
 #fridaySpecial {
-    background-image: url('../images/Mextini.jpg');
+    background-image: url('../images/Mextini_square.jpg');
 }
 #saturdaySpecial {
-    background-image: url('../images/pitcher.jpg');
+    background-image: url('../images/pitcher_square.jpg');
 }
 #sundaySpecial {
-    background-image: url('../images/bloody_mary_2.jpg');
+    background-image: url('../images/bloody_mary_2_square.jpg');
 }
 .specialsRow {
     margin-top: auto;
