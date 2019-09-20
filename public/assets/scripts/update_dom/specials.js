@@ -15,12 +15,24 @@ axios.get('/api/specialsBar').then(response => {
             <div class="carousel-inner">
                 <h1 class="specialsTitle"><u>Daily Bar Specials</u></h1>
                 <div class="carousel-item active">
-                    <h1 class="specialsDay">${barSpecials[0].day}</h1>
-                    <h2 class="specials">${barSpecials[0].special}</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-lg-4">
+                            <h1 class="specialsDay">${barSpecials[0].day}</h1>
+                            <h2 class="specials">${barSpecials[0].special}</h2>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 specialsImage" id="mondaySpecial">
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <h1 class="specialsDay">${barSpecials[1].day}</h1>
-                    <h2 class="specials">${barSpecials[1].special}</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-lg-4">
+                            <h1 class="specialsDay">${barSpecials[1].day}</h1>
+                            <h2 class="specials">${barSpecials[1].special}</h2>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 specialsImage" id="tuesdaySpecial">
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row justify-content-center">
@@ -53,8 +65,14 @@ axios.get('/api/specialsBar').then(response => {
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <h1 class="specialsDay">${barSpecials[5].day}</h1>
-                    <h2 class="specials">${barSpecials[5].special}</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-lg-4">
+                            <h1 class="specialsDay">${barSpecials[5].day}</h1>
+                            <h2 class="specials">${barSpecials[5].special}</h2>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 specialsImage" id="saturdaySpecial">
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row justify-content-center">

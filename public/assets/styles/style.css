@@ -150,17 +150,26 @@ h2 {
     padding-bottom: 100px;
     min-height: 60vh;
 }
+#mondaySpecial {
+    background-image: url('../images/vodka_cran.jpg');
+}
+#tuesdaySpecial {
+    background-image: url('../images/whiskey.jpg');
+}
 #wednesdaySpecial {
-    background-image: url('../images/Margarita.jpg');
+    background-image: url('../images/margaritas.jpg');
 }
 #thursdaySpecial {
-    background-image: url('../images/Draft_Beer.jpg');
+    background-image: url('../images/beers.jpg');
 }
 #fridaySpecial {
     background-image: url('../images/Mextini.jpg');
 }
+#saturdaySpecial {
+    background-image: url('../images/pitcher.jpg');
+}
 #sundaySpecial {
-    background-image: url('../images/Bloody_Mary.jpg');
+    background-image: url('../images/bloody_mary_2.jpg');
 }
 .specialsRow {
     margin-top: auto;
@@ -190,6 +199,13 @@ h2 {
     background-position: center;
     background-size: contain;
     margin-top: 150px;
+}
+.wineImages {
+    height: 470px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .centered {
     text-align: center;
@@ -394,6 +410,9 @@ h2 {
     }
     /* ----------Bar ------------- */
     .spiritImages {
+        display: none;
+    }
+    .wineImages {
         display: none;
     }
     /* -------------Live Music--------- */

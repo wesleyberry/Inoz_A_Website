@@ -1,10 +1,10 @@
 window.sr = ScrollReveal();
 // Landing Page
-sr.reveal('#landingPageLogo', {
-    duration: 1000, 
-    origin: 'bottom',
-    distance: '500px',
-});
+// sr.reveal('#landingPageLogo', {
+//     duration: 1000, 
+//     origin: 'bottom',
+//     distance: '500px',
+// });
 // About Us
 // sr.reveal('#secondAboutImage', {
 //     duration: 750, 
