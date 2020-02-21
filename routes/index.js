@@ -6,6 +6,7 @@ const specials = require('./specials.js');
 const users = require('./users.js');
 const logout = require('./logout.js');
 
+// Bundles all api routes to /api
 router.use('/api', hours);
 router.use('/api', bands);
 router.use('/api', specials);

@@ -15,6 +15,7 @@ app.use(session({ secret: process.env.PASSPORT_SECRET, resave: true, saveUniniti
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(routes);
+// ^^ Middleware ^^
 
 const syncOptions = { force: false };
 
@@ -22,6 +23,7 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = false;
 }
 
+// Authenticates User
 const isAuthenticated = require("./config/middleware/isAuthenticated");
 app.get("/admin", isAuthenticated, function(req, res) {
   if(req.user.name === 'rootroot') {
@@ -34,7 +36,7 @@ app.get("/login", function(req, res) {
   res.sendFile(path.join(__dirname, "/public/login.html"));
 });
 
-
+// Syncs database and server
 db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
     console.log(

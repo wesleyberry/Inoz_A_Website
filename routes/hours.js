@@ -3,6 +3,7 @@ const router = require('express').Router();
 const db = require('../models');
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
+// Gets all hours
 router.route('/hours').get((req, res) => {
     db.Hour.findAll({
         where: {
@@ -15,6 +16,7 @@ router.route('/hours').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+// Changes hours
 router.put('/hours/:value', isAuthenticated, (req, res) => {
     const value = req.params.value;
     if(req.user.name === 'rootroot') {
@@ -58,6 +60,7 @@ router.put('/hours/:value', isAuthenticated, (req, res) => {
     }
 });
 
+// Changes Tuesdays to open or closed
 router.put('/hours/tuesdays/:value', isAuthenticated, (req, res) => {
     const value = req.params.value;
     console.log(value);

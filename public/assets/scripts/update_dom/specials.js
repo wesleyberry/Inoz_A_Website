@@ -1,4 +1,5 @@
 axios.get('/api/specialsBar').then(response => {
+    // Updates DOM with bar specials
     const barSpecials = response.data;
     $('#barSpecialsGoHere').html(
         `<div class="bd-example background-carousel-1">
@@ -98,6 +99,7 @@ axios.get('/api/specialsBar').then(response => {
     )
 }).catch(err => console.log(err));
 
+// Updates DOM with food specials
 axios.get('/api/specialsFood').then(response => {
     const foodSpecials = response.data;
     if(foodSpecials.length > 0) {
@@ -174,6 +176,7 @@ axios.get('/api/specialsFood').then(response => {
     }
 }).catch(err => console.log(err));
 
+// Get all specials
 axios.get('api/specials').then(response => {
     const results = response.data;
     for(var i = 0; i < results.length; i++) {
@@ -190,6 +193,7 @@ axios.get('api/specials').then(response => {
     }
 }).catch(err => console.log(err));
 
+// Deletes special
 $(document).on('click', '.specialsDelete', function() {
     const id = this.id;
     axios.delete('/api/specials' + id, (req, res) => {})
@@ -197,6 +201,7 @@ $(document).on('click', '.specialsDelete', function() {
     .catch(err => console.log(err));
 });
 
+// New special
 $('#submitSpecial').on('click', function() {
     event.preventDefault();
     var day = $('#exampleFormControlSelect1').val();

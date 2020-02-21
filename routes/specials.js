@@ -3,6 +3,7 @@ const router = require('express').Router();
 const db = require('../models');
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
+// Gets food specials
 router.route('/specialsFood').get((req, res) => {
     db.Special.findAll({
         where: {
@@ -15,6 +16,7 @@ router.route('/specialsFood').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+// Gets Bar specials
 router.route('/specialsBar').get((req, res) => {
     db.Special.findAll({
         where: {
@@ -27,6 +29,7 @@ router.route('/specialsBar').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+// Get all specials
 router.route('/specials').get((req, res) => {
     db.Special.findAll({})
     .then(response => {
@@ -35,6 +38,7 @@ router.route('/specials').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+// Deletes a specific special
 router.delete("/specials:id", isAuthenticated,(req, res) => {
     if(req.user.name === 'rootroot') {
         db.Special.destroy({
@@ -46,6 +50,7 @@ router.delete("/specials:id", isAuthenticated,(req, res) => {
     }
 });
 
+// Creates a new Special
 router.post('/specials', isAuthenticated,(req, res) => {
     if(req.user.name === 'rootroot') {
         const special = req.body;

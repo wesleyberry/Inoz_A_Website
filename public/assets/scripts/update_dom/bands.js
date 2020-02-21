@@ -1,4 +1,5 @@
 axios.get('api/bands').then(response => {
+    // Get all bands
     const results = response.data;
     for(var i = 0; i < results.length; i++) {
         var month = results[i].month;
@@ -65,6 +66,7 @@ axios.get('api/bands').then(response => {
     }
 }).catch(err => console.log(err));
 
+// Deletes band
 $(document).on('click', '.bandDelete', function() {
     const id = this.id;
     axios.delete('/api/bands' + id, (req, res) => {})
@@ -72,6 +74,7 @@ $(document).on('click', '.bandDelete', function() {
     .catch(err => console.log(err));
 });
 
+// Creates band
 $('#submitBand').on('click', function() {
     event.preventDefault();
     var band = $('#bandName').val();

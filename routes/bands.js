@@ -3,6 +3,7 @@ const router = require('express').Router();
 const db = require('../models');
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
+// Gets all bands for schedule
 router.route('/bands').get((req, res) => {
     db.Band.findAll({})
     .then(response => {
@@ -11,6 +12,7 @@ router.route('/bands').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+// Gets a specific band for schedule
 router.delete("/bands:id", isAuthenticated, (req, res) => {
     if(req.user.name === 'rootroot') {
         db.Band.destroy({
@@ -22,6 +24,7 @@ router.delete("/bands:id", isAuthenticated, (req, res) => {
     }
 });
 
+// Creates a new band for schedule
 router.post('/bands', isAuthenticated, (req, res) => {
     const band = req.body;
     if(req.user.name === 'rootroot') {

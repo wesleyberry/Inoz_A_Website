@@ -1,4 +1,5 @@
 $('#submitCredentials').on('click', function() {
+    // Login
     event.preventDefault();
     var name = $('#exampleInputEmail1').val();
     var password = $('#exampleInputPassword1').val();
@@ -16,6 +17,7 @@ Please Try Again`
         ));
 });
 
+// Creates User
 $('#submitSignUp').on('click', function() {
     event.preventDefault();
     var name = $('#exampleInputEmail1').val();
@@ -27,6 +29,7 @@ $('#submitSignUp').on('click', function() {
     .catch(err => console.log(err));
 });
 
+// Logout
 $('#logout').on('click', function() {
     event.preventDefault();
     axios.get('/logout/')
@@ -34,6 +37,7 @@ $('#logout').on('click', function() {
     .catch(err => console.log(err));
 });
 
+// Checks database for user
 function checkDB() {
     axios.post('/api/users/checkDB', {})
     .then(() => console.log(200))
